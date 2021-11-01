@@ -6,6 +6,8 @@ For this project, two teammates and I were tasked with using SQL and Google Shee
 
 For the purpose of this report, the word “player(s)” is referring to the unique player IDs under the assumption that real life players did not share their player IDs with others.
 
+The link to my Google Sheets work: https://docs.google.com/spreadsheets/d/1CQshZLSEpmbKZuLjd8agbR5Pyd4jJ5Vvplj8_4w--2s/edit?usp=sharing
+
 ## Rolling 30-Day Retention
 
 Rolling 30-day retention refers to whether a player has engaged with the game 30 days after having joined, and if they have, they are considered retained. For this company, they were more specifically interested in whether the players had participated in a one on one match 30 days after having joined. To answer this question, we calculated the rolling 30 day retention using several nested SQL queries which I will now break down into steps.
