@@ -43,6 +43,8 @@ query above
 GROUP BY 
     joined
 ```
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/Img2-retention_pct_table-.png)
+
 In the last two steps of this query (the two outermost queries of the whole), we calculated the 30-day retention growth rate for players throughout the year. We used the LAG function with OVER and ORDER BY to create an additional column called prev_pct_retention for the fractional retention of each previous day. We then subtracted the previous day’s fractional retention from that of each day of the year and divided the results by the previous day’s fractional retention to get the 30-day retention growth rate. Once again, we left the rounding and the multiplying by 100 to get the percentage to be done in Google Sheets.
 
 ```
@@ -58,8 +60,10 @@ FROM (
         LAG(pct_retention, 1) OVER (ORDER BY joined) AS prev_pct_retention
     FROM (queries above)
 ```
-We then imported the results into Google Sheets in order to visualize the 30-day retention by creating a chart. The percent retention and the retention growth rate were both plotted by day across the year and the horizontal trend lines for these scatterplots indicated that there was virtually no change throughout the year. We did not plot the last 30 days of the year since we did not have match information beyond 29 or fewer days for the players who joined during that time.
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img3b-30-day-retention-growthrate.png)
 
+We then imported the results into Google Sheets in order to visualize the 30-day retention by creating a chart. The percent retention and the retention growth rate were both plotted by day across the year and the horizontal trend lines for these scatterplots indicated that there was virtually no change throughout the year. We did not plot the last 30 days of the year since we did not have match information beyond 29 or fewer days for the players who joined during that time.
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img4-30-day-rolling-retention-graph.png)
 We also calculated the averages for our two retention metrics and found that the average for the retention growth rate was virtually 0% (0.24%), confirming that there was very little change from day to day throughout the year. The average for the daily percent retention was 73%, which by industry standards was quite high.  After researching the 30-day retention for mobile gaming apps in general, we found that it averaged anywhere from 5 to 27% with those numbers being acceptable and expected.  So with a 73% 30-day rolling retention, this company’s game seemed to be doing well. 
 
 
@@ -145,21 +149,24 @@ GROUP BY
     s.player_id,
     r.retention_status
 ```
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img3-streak_retention_table.png)
+
 Once again, we imported our findings into Google Sheets for the visualization process. Here we’ll look at the relationship between losing streaks and 30-day retention first. 
 
 In the graph below, we can see that as losing streaks got longer, the number of players retained increased until the 3 day losing streak point, where the number retained then rapidly declined. Those players not retained followed a similar pattern but this time, they started to decline after just a two loss streak.  Overall, for each length of losing streak, more players were retained than not retained, as seen previously in our average retention rate of 73%.
-
-For this graph, we only looked at winning streaks up to a length of 10 games since the number of players for streaks higher than that was so low that the margin of error and variability would lead to meaningless results.
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img5-losing_streak_line_graph.png)
+For the next graph, we only looked at winning streaks up to a length of 10 games since the number of players for streaks higher than that was so low that the margin of error and variability would lead to meaningless results.
 
 Here, we can see that only with a one game longest losing streak is the percent retention higher for those not retained than for those retained. It seems as if once players stuck it out into a 2 or more game losing streak, they were more likely to be retained the longer the losing streak.  
-
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img6-losing_streak_bar_graph.png)
 Next, we’ll look at the relationship between win streaks and 30-day retention. 
 
 In this graph, we can see that as win streaks got longer, the number of players retained increased until the win streak was 3 days long, and then once again, the number retained rapidly declined. Much like the losing streak pattern, those players not retained started to decline after just a two win streak.  And again, 0verall, for each length of win streak, more players were retained than not retained, following our average retention rate of 73%.
-
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img7-win_streak_line_graph.png)
 Again, in the following graph, we only looked at win streaks up to a length of 10 games due to the low sample size of higher streak lengths.
 
 Here, we can see that once again, only with a one game longest win streak is the percent retention higher for those not retained than for those retained. Then, as the players’ longest win streaks increased, they continued to be more likely to be retained.
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img8-win_streak_bar_graph.png)
 
 ## Conclusions and Next Steps
 
