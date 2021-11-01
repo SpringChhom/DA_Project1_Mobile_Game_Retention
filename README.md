@@ -163,7 +163,9 @@ GROUP BY
 Once again, we imported our findings into Google Sheets for the visualization process. Here we’ll look at the relationship between losing streaks and 30-day retention first. 
 
 In the graph below, we can see that as losing streaks got longer, the number of players retained increased until the 3 day losing streak point, where the number retained then rapidly declined. Those players not retained followed a similar pattern but this time, they started to decline after just a two loss streak.  Overall, for each length of losing streak, more players were retained than not retained, as seen previously in our average retention rate of 73%.  
+
 ![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img5-losing_streak_line_graph.png)
+
 For the next graph, we only looked at winning streaks up to a length of 10 games since the number of players for streaks higher than that was so low that the margin of error and variability would lead to meaningless results.
 
 Here, we can see that only with a one game longest losing streak is the percent retention higher for those not retained than for those retained. It seems as if once players stuck it out into a 2 or more game losing streak, they were more likely to be retained the longer the losing streak.  
