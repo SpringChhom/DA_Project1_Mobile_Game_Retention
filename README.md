@@ -27,6 +27,7 @@ GROUP BY
     joined,
     pl.player_id
 ```
+![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/Img1-retention_status_table.png)
 
 The next step was to calculate the percentage of players retained for 30 days out of the total players who had joined for each day of the first year of the game. We did this using the COUNT function to count the total players (as players_joined) and the COUNTIF function to count the number of players who were retained 30 days or more (as players_retained) and then dividing players_retained by total_players to find the fraction of players retained (as pct_retention) for each day of the year. We did not round the results or multiply by 100 to get the percent, instead leaving that to be done later in Google Sheets where we would do the visualization.
 
