@@ -27,7 +27,6 @@ GROUP BY
     joined,
     pl.player_id
 ```
-! 
 
 The next step was to calculate the percentage of players retained for 30 days out of the total players who had joined for each day of the first year of the game. We did this using the COUNT function to count the total players (as players_joined) and the COUNTIF function to count the number of players who were retained 30 days or more (as players_retained) and then dividing players_retained by total_players to find the fraction of players retained (as pct_retention) for each day of the year. We did not round the results or multiply by 100 to get the percent, instead leaving that to be done later in Google Sheets where we would do the visualization.
 
@@ -160,6 +159,8 @@ In this graph, we can see that as win streaks got longer, the number of players 
 Again, in the following graph, we only looked at win streaks up to a length of 10 games due to the low sample size of higher streak lengths.
 
 Here, we can see that once again, only with a one game longest win streak is the percent retention higher for those not retained than for those retained. Then, as the players’ longest win streaks increased, they continued to be more likely to be retained.
+
+## Conclusions and Next Steps
 
 In conclusion, we were able to report to the mobile game company that their game’s 30-day retention had remained steady throughout the entire year and that their 73% retention rate indicated that their game was doing quite well by industry standards. In addition, we were able to inform them that win streaks and losing streaks did not seem to affect 30-day retention and that in both circumstances, the players retained remained higher than those not retained over all. 
 
