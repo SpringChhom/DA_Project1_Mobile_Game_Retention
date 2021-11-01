@@ -162,7 +162,7 @@ GROUP BY
 
 Once again, we imported our findings into Google Sheets for the visualization process. Here we’ll look at the relationship between losing streaks and 30-day retention first. 
 
-In the graph below, we can see that as losing streaks got longer, the number of players retained increased until the 3 day losing streak point, where the number retained then rapidly declined. Those players not retained followed a similar pattern but this time, they started to decline after just a two loss streak.  Overall, for each length of losing streak, more players were retained than not retained, as seen previously in our average retention rate of 73%.
+In the graph below, we can see that as losing streaks got longer, the number of players retained increased until the 3 day losing streak point, where the number retained then rapidly declined. Those players not retained followed a similar pattern but this time, they started to decline after just a two loss streak.  Overall, for each length of losing streak, more players were retained than not retained, as seen previously in our average retention rate of 73%.  
 ![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img5-losing_streak_line_graph.png)
 For the next graph, we only looked at winning streaks up to a length of 10 games since the number of players for streaks higher than that was so low that the margin of error and variability would lead to meaningless results.
 
@@ -172,9 +172,10 @@ Here, we can see that only with a one game longest losing streak is the percent 
 
 Next, we’ll look at the relationship between win streaks and 30-day retention. 
 
-In this graph, we can see that as win streaks got longer, the number of players retained increased until the win streak was 3 days long, and then once again, the number retained rapidly declined. Much like the losing streak pattern, those players not retained started to decline after just a two win streak.  And again, 0verall, for each length of win streak, more players were retained than not retained, following our average retention rate of 73%.
+In this graph, we can see that as win streaks got longer, the number of players retained increased until the win streak was 3 days long, and then once again, the number retained rapidly declined. Much like the losing streak pattern, those players not retained started to decline after just a two win streak.  And again, 0verall, for each length of win streak, more players were retained than not retained, following our average retention rate of 73%.  
 
 ![alt text](https://github.com/SpringChhom/Data_Analytics_Project_1/blob/main/images_and_graphs/img7-win_streak_line_graph.png)
+
 
 Again, in the following graph, we only looked at win streaks up to a length of 10 games due to the low sample size of higher streak lengths.
 
@@ -184,7 +185,7 @@ Here, we can see that once again, only with a one game longest win streak is the
 
 ## Conclusions and Next Steps
 
-In conclusion, we were able to report to the mobile game company that their game’s 30-day retention had remained steady throughout the entire year and that their 73% retention rate indicated that their game was doing quite well by industry standards. In addition, we were able to inform them that win streaks and losing streaks did not seem to affect 30-day retention and that in both circumstances, the players retained remained higher than those not retained over all. 
+In conclusion, we were able to report to the mobile game company that their game’s 30-day retention had remained steady throughout the entire year and that their 73% retention rate indicated that their game was doing quite well by industry standards. In addition, we were able to inform them that win streaks and losing streaks did not seem to affect 30-day retention and that in both circumstances, the players retained remained higher than those not retained over all.  
 
 Further analysis could be done in the area of win streaks and losing streaks such as their effect on player purchases and the effect of the number of win streaks and losing streaks per player on 30-day retention. We could also look at the 30-day retention rate by age and location, and purchasing patterns based on those metrics as well.
 
